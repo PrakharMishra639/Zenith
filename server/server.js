@@ -21,6 +21,7 @@ app.use(
     allowedHeaders: ["Content-Type", "Authorization"],
   })
 );
+console.log("CLIENT_URL used for CORS:", process.env.CLIENT_URL);
 
 app.use(express.json());
 
